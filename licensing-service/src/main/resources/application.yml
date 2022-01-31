@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: licensingservice
+  profiles:
+    active: default
+  config:
+    import: optional:configserver:http://localhost:8888
+encrypt:
+  key: secret
